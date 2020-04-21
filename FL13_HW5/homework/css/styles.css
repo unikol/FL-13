@@ -1,0 +1,388 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+/*
+:root {
+  --bg-color--dark: #0b192f;
+  --bg-color--medium: #162b4d;
+  --text--color: #484848;
+  --link: #fff;
+  --link--hover: #b8b8b8;
+}
+*/
+body {
+  font-family: roboto;
+}
+
+.post-1 {
+	background: #F3D250;
+}
+.post-2 {
+	background: #8D8741;
+}
+.post-3 {
+	background: #659DBD;
+}
+.post-4 {
+	background: #DAAD86;
+}
+
+/* Your styles go here */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0b192f;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.header-top {
+  display: flex;
+  flex-direction: row;
+  background-color: #162b4d;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 0px 30px 10px 30px;
+}
+.header-logo {
+  margin-left: 25px;
+}
+.header-logo span:first-child {
+  color: #fff;
+  font-weight: 200;
+  font-size: 35px;
+}
+.header-logo span:nth-child(2) {
+  color: #d12955;
+  font-weight: 100;
+  font-size: 35px;
+}
+nav ul {
+  height: 80px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 35px;
+}
+nav a {
+  display: block;
+  height: 80px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+  font-weight: 100;
+  line-height: 80px;
+}
+nav a:hover {
+  background-color: #445570;
+}
+.menu span {
+  display: none;
+  width: 33px;
+  height: 1px;
+  margin-bottom: 3px;
+  position: relative;
+  background-color: #cdcdcd;
+}
+.menu span:first-child {
+  height: 3px;
+  border-radius: 1px;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+main {
+  width: 80%;
+  margin: 10px 20px 20px 30px;
+}
+article {
+  display: flex;
+  flex-direction: row;
+}
+article:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+article div > img {
+  width: 100%;
+  height: 100%;
+}
+article > div {
+  width: 50%;
+  height: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+article > div:hover, article div img:hover {
+  transition: 0.3s;
+  filter: opacity(70%);
+  cursor: pointer;
+}  
+article div:nth-child(2) {
+  padding: 1vw;
+}
+article:nth-child(2n) {
+  text-align: right;
+}
+article h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin: 18px;
+  color: #484848;
+  white-space: pre-line;
+}
+article p {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 15px;
+  padding-right: 50px;
+  line-height: 2;
+  color: #484848;
+}
+article:nth-child(2n) > div p {
+  font-size: 12px;
+  padding-left: 50px;
+  padding-right: 0px;
+}
+article > div div {
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 10px;
+  text-align: center;
+  font-weight: 100;
+  color: #484848;
+}
+article > div div span {
+  text-align: center;
+  font-size: 40px;
+  color: #484848;
+}
+article:nth-child(2n) > div div {
+  position: absolute;
+  width: 20%;
+  left: 0px;
+  top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  color: #484848;
+}
+.post-5 {
+  background-image: url("../img/post5.jpg");
+  background-position: center center;
+  background-size: cover;
+  width: auto;
+  height: 40vh;
+  position: relative;
+  box-sizing: border-box;
+}
+.post-5 h2 {
+  color: #FFF;
+  width: 80%;
+  position: relative;
+  top: 45%;
+}
+.post-5 p {
+  color: #FFF;
+  position: relative;
+  width: 95%;
+  top: 45%;
+}
+aside {
+  width: 23.5%;
+  height: auto;
+  margin: 10px 30px 0 0;
+}
+aside div {
+margin-bottom: 20px;
+}
+.news {
+  background-color: #fff;
+  height: auto;
+}
+.news img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.news h2 {
+  font-size: 18px;
+  font-weight: 100;
+  color: #484848;
+  text-align: left;
+  padding: 2vh 2.5vw;
+  margin: 0;
+}
+aside p {
+  font-size: 12px;
+  font-weight: 100;
+  color: #484848;
+  text-align: left;
+  padding: 10px 2.5vw 2vw;
+  line-height: 1.3;
+}
+.news a {
+  display: inline-block;
+  border: 1px solid #484848;
+  font-size: 0.6em;
+  font-weight: 600;
+  color: #484848;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 10px;
+  bottom: 10px;
+  left: 25px;
+  margin: 10px auto;
+ }
+ .news a:hover {
+   border: none;
+   border-bottom: 1px solid #162b4d;
+ }
+footer {
+  background-color: #162b4d;
+  max-width: 1400px;
+  height: 100px;
+  margin: 5px 30px 0 30px;
+}
+.footer-wrap {
+  font-size: 15px;
+  font-weight: 100;
+  color: #b8b8b8;
+  padding: 25px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+footer div p {
+  margin: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+      max-width: 1400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-top {
+    height: 10vh;
+  }
+  .header-logo {
+      margin: 0 auto;
+      margin-top: 25px;
+  }
+  .menu {
+      position: absolute;
+      top: 5px;
+      left: 50%;
+  }
+  .menu span {
+      display: block;
+      width: 35px;
+      height: 3px;
+      margin-bottom: 3px;
+      background-color: #cdcdcd;
+      border-radius: 3px;
+  }
+  nav ul {
+      display: none;
+  }
+  article {
+      flex-direction: column;
+      margin: 0 auto;
+  }
+  article h2 {
+      white-space: normal;
+  }
+  article > div {
+      width: 100%;
+      height: 100%;
+      text-align: left;
+  }
+  article:nth-child(2n) {
+      flex-direction: column;
+      width: 100%;
+  }
+  article > div div,
+  article:nth-child(2n) > div div {
+      width: 100%;
+      position: relative;
+      margin-bottom: 40px;
+  }
+  .post-5 div {
+      position: relative;
+  }
+  aside {
+      height: auto;
+      width: 30%;
+  }
+  .footer-wrap {
+      flex: none;
+      display: block;
+  }
+  footer div p {
+      margin: 0;
+      height: 100%;
+      text-align: center;
+  }
+  .post-5 h2 {
+    width: 80%;
+    position: relative;
+    top: 15%;
+  }
+  .post-5 p {
+    color: #FFF;
+    position: relative;
+    width: 90%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .header-top {
+    margin: 0px -30px 10px 30px;
+  }
+  .main-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+  main {
+      width: 100%;
+  }
+  article div,
+  aside {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .news h2,
+  .news p {
+      text-align: left;
+      margin: 0 0px;
+  }
+  .footer-wrap {
+    flex: none;
+    display: block;
+    font-size: 12px;
+  }
+  footer {
+    margin: 0px -25px 0px 25px;
+  }
+}
