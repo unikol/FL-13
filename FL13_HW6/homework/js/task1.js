@@ -17,9 +17,3 @@ Tip: ${percentTip.toFixed(two)}%
 Tip amount: ${tipAmount.toFixed(two)} 
 Total sum to pay: ${totalSum.toFixed(two)}`);
 }
-
-// result = `Price without discount: ${+price.toFixed(2)}
-// Discount: ${+discount.toFixed(2)}%
-// Price with discount: ${+priceDiscount.toFixed(2)}
-// Saved: ${+priceSaved.toFixed(2)}`;
-// }
