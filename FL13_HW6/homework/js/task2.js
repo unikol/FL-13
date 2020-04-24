@@ -1,7 +1,7 @@
-let s = prompt('input a word:');
-const midChar = s => s.substr(s.length - 1 >>> 1, (~s.length & 1) + 1);
-if (s === '' || s === null || s.trim() === '') {
+let string = prompt('input a word:');
+const midChar = string => string.substr(string.length - 1 >>> 1, (~string.length & 1) + 1);
+if (string === '' || string === null || string.trim() === '') {
     alert('Invalid value');
 } else {
-alert(`"${midChar(s)}"`);
+alert(`"${midChar(string)}"`);
 }
