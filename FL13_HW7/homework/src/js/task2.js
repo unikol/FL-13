@@ -18,7 +18,7 @@ if (!game) {
       prizes[second] = 25;
         while (isContinue) {
         let randomNumber = Math.floor(Math.random() * (max - min)) + min;
-        alert(randomNumber);
+        console.log(randomNumber);
         let attempts = 3;
         for (let i = 0; i < third; i++) {
         let userNumber = parseInt(prompt(`Enter a number from 0 to ${max} 
