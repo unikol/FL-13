@@ -1,4 +1,3 @@
-
 function storeNames() {
     return Array.prototype.slice.call(arguments);
 }
