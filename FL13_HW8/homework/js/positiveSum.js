@@ -7,4 +7,4 @@ function positiveSum( array ) {
     }
     return sum;
 }
-positiveSum([2, 4, 6, 8]);
+console.log(positiveSum([2, 4, 6, 8]));

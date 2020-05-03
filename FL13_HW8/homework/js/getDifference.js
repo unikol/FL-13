@@ -4,4 +4,4 @@ function isBigger(a, b){
 function getDifference (a, b) {
   return isBigger(a, b) ? a - b : b - a;
     }
-getDifference(5, 8); // => 3
+    console.log(getDifference(5, 8)); // => 3

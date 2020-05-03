@@ -1,5 +1,5 @@
 function stringToNumber(value) {
     return parseInt(value);
 }
-stringToNumber('1258');
+console.log(stringToNumber('1258'));
 
