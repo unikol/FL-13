@@ -59,8 +59,8 @@ function containsValue(arr, value) {
     }
     return false;
 }
-// containsValue([2, 5, 8], 2)  // returns true
-// containsValue([12, 4, 6], 5)  // returns false
+// console.log(containsValue([2, 5, 8], 2)); // returns true
+// console.log(containsValue([12, 4, 6], 5)); // returns false
 
 // Task #6
 function flipOver(str) {
@@ -115,34 +115,25 @@ function substitute(arr) {
 // console.log(substitute([20, 58, 14, 48, 12, 31, 19, 10])); // = > returns [20, 58, '*', 48, '*', 31, '*', 10]
 
 // Task #10
-const year = 2020;
-const day = 2
-const date = new Date(year, 0, day)
+const yearTaskTen = 2020;
+const dayTaskTen = 2
+const date = new Date(yearTaskTen, 0, dayTaskTen)
 
 function getPastDate(date, numDaysAgo) {
     let pastDate = date;
     pastDate.setDate(date.getDate() - numDaysAgo);
     return pastDate.getDate();
 }
-// console.log(getPastDate(date, 1));
-// getPastDay(date, 1); // 1, (1 Jan 2020)
-// getPastDay(date, 2); // 31, (31 Dec 2019)
-// getPastDay(date, 365); // 2, (2 Jan 2019)
+// console.log(getPastDate(date, 1)); // => 1, (1 Jan 2020)
 
 // Task #11
 function formatDate(date) {
-    // let month = date.getMonth() < numTen ? '0' + date.getMonth() : date.getMonth();
-    let month = date.getMonth() < numTen ? `0` + (date.getMonth() + 1) : date.getMonth();
+    let month = date.getMonth() + 1 < numTen ? '0' + (date.getMonth() + 1) : date.getMonth() + 1;
     let day = date.getDate() < numTen ? '0' + date.getDate() : date.getDate();
     let hours = date.getHours() < numTen ? '0' + date.getHours() : date.getHours();
     let minutes = date.getMinutes() < numTen ? '0' + date.getMinutes() : date.getMinutes();
     return `${date.getFullYear()}/${month}/${day} ${hours}:${minutes}`
 }
 console.log(formatDate(new Date('6/15/2019 09:15:00'))); // => "2019/06/15 09:15"
-console.log(formatDate(new Date())); // gets current local time in such format (YYYY/MM/DD HH:mm)
-
-// RESTRICTIONS
-// -	Using built–in array or object methods(besides push, length and date methods) is forbidden
-// -	Using built–in string methods (except parseInt) is forbidden
-// -	Using any external libraries is forbidden
+console.log(formatDate(new Date())); // => gets current local time in such format (YYYY/MM/DD HH:mm)
 
