@@ -60,10 +60,10 @@ function Fighter(obj) {
     });
   
     this.heal = function (healthPoints) {
-      if (parseInt(healthPoints) > totalHp) {
+      if (healthPoints > totalHp) {
         hp = totalHp;
       } else {
-        hp += parseInt(healthPoints);
+        hp += healthPoints;
       }
     }
     Object.defineProperty(this, 'heal', {
