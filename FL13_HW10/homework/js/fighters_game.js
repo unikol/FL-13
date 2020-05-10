@@ -60,9 +60,7 @@ function Fighter(obj) {
     });
   
     this.heal = function (healthPoints) {
-      if (isNaN(healthPoints)) {
-        throw new Error('You need to pass a Number value.');
-      } else if (parseInt(healthPoints) > totalHp) {
+      if (parseInt(healthPoints) > totalHp) {
         hp = totalHp;
       } else {
         hp += parseInt(healthPoints);
