@@ -1,0 +1,54 @@
+  
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.list {
+    list-style: none;
+    width: 100%;
+}
+
+.list-open,
+.list-close {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.list-open:hover,
+.list-close:hover {
+    background-color: #75757526;
+}
+
+
+
+.list__block {
+    flex-grow: 1;
+}
+
+.icon--open {
+    color: #EDBC0B;
+}
+.icon--close {
+    color: #EDBC0B;
+}
+
+.file {
+    color: #cccccc;
+}
+
+.right-click-menu {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    list-style: none;
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    display: none;
+}
+
+.right-click-menu.active {
+    display: block;
+}
