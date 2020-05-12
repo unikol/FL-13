@@ -174,14 +174,10 @@ rootNode.addEventListener('contextmenu', event => {
   //to disable browser default context menu
   event.preventDefault()
   //to attach context button to mouse
-  // menu.style.top = ${event.clientY}px;
-  // menu.style.left = ${event.clientX}px;
+  //menu.style.top = ${event.clientY}px;
+  //menu.style.left = ${event.clientX}px;
   //make it visible
-  // menu.classList.add('active');
+  //menu.classList.add('active');
 }); 
   
 createClass(data, rootNode);
-
-
-
-
