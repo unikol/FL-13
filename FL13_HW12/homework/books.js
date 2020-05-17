@@ -1,16 +1,3 @@
-// const data = [{bookName: 'a',
-// author: 'b',
-// img: 'c',
-// plot: 'd},{},{}]
-
-// localStorag.setItem('Books', JSON.stringify(books))
-
-
-// myStorage.setItem(id, JSON.stringify({
-//     title: i['title'];
-// }));
-
-
 let dynamicPart, newBook, data;
 
 
